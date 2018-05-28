@@ -1,0 +1,2 @@
+webpackJsonp([2],{"16SZ":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var s={render:function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"hello"},[e("h1",[this._v(this._s(this.msg))])])},staticRenderFns:[]};var a=n("Z0/y")({name:"notFound",data:function(){return{msg:"页面找不到了"}}},s,!1,function(t){n("d6S1")},"data-v-59091326",null);e.default=a.exports},d6S1:function(t,e){}});
+//# sourceMappingURL=2.183eee89196dc224c346.js.map
