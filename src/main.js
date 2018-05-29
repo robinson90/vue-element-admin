@@ -13,7 +13,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import '@/styles/index.scss' // global css
 
-
+import './permission' // 鉴权文件
 import './mock' // simulation datacnpm
 
 Vue.config.productionTip = false
