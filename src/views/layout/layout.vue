@@ -1,7 +1,7 @@
 <template>
-  <div class="app-wrapper" :class="classObj">
-    <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"></div>
-    <sidebar class="sidebar-container"></sidebar>
+  <div class="app-wrapper" >
+    <!-- <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"></div> -->
+    <!-- <sidebar class="sidebar-container"></sidebar> -->
     <div class="main-container">
       <!-- <navbar></navbar>
       <tags-view></tags-view>
@@ -24,19 +24,19 @@ export default {
   },
   mixins: [],
   computed: {
-    sidebar() {
-      return this.$store.state.app.sidebar
-    },
-    device() {
-      return this.$store.state.app.device
-    },
-    classObj() {
-      return {
-        hideSidebar: !this.sidebar.opened,
-        withoutAnimation: this.sidebar.withoutAnimation,
-        mobile: this.device === 'mobile'
-      }
-    }
+    // sidebar() {
+    //   return this.$store.state.app.sidebar
+    // },
+    // device() {
+    //   return this.$store.state.app.device
+    // },
+    // classObj() {
+    //   return {
+    //     hideSidebar: !this.sidebar.opened,
+    //     withoutAnimation: this.sidebar.withoutAnimation,
+    //     mobile: this.device === 'mobile'
+    //   }
+    // }
   },
   methods: {
     handleClickOutside() {

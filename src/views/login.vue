@@ -18,6 +18,8 @@
   </div>
 </template>
 <script>
+import { getToken, setToken, removeToken } from '@/utils/auth'
+
 export default {
   name: "login",
   data() {
@@ -45,8 +47,7 @@ export default {
                         message: '恭喜你，登录成功',
                         type: 'success'
                         });
-                        localStorage.setItem("name",name)
-                        localStorage.setItem("password",password)
+                        setToken(password)
                         setTimeout(()=>{
                             this.$router.push("index")
                         },500) 
